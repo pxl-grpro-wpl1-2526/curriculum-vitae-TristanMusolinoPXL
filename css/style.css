@@ -1,0 +1,65 @@
+body {
+   font-family: "Inter", Arial, Helvetica, sans-serif;
+   line-height: 1.6;
+   margin: 20px;
+}
+
+h1, h2, h3 {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+p, li, td {
+    font-weight: 400;
+}
+
+#foto img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+    display: block;
+}
+
+#foto img:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.75);
+}
+
+ul {
+    padding-left: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 8px;
+}
+
+table th,
+table td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+section {
+    margin-bottom: 28px;
+}
+
+.job .periode {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 6px;
+}
+
