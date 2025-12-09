@@ -1,46 +1,87 @@
+*{
+    margin: 0;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
 body {
-   font-family: "Inter", Arial, Helvetica, sans-serif;
-   line-height: 1.6;
-   margin: 20px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+main {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem 0;
+}
+p{
+    font-size: 1.2rem;
 }
 
 h1, h2, h3 {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+h2::after {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 p, li, td {
     font-weight: 400;
+    font-size: 1.2rem;
+}
+
+#foto {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#foto figure {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
 }
 
 #foto img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease;
     display: block;
+    margin: 0 auto;
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 1.2rem;
+    transition: box-shadow 0.3s ease;
 }
 
 #foto img:hover {
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0.8rem 2.2rem rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 48rem) {
+    #foto img {
+        width: 14rem;
+        height: 14rem;
+    }
 }
 
 ul {
-    padding-left: 20px;
+    padding-left: 0;
+    list-style: none;
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
-    margin-top: 8px;
+    margin: 0.8rem auto 0 auto;
 }
 
 table th,
 table td {
-    padding: 6px 8px;
-    border-bottom: 1px solid #eee;
+    padding: 0.6rem 0.8rem;
+    border-bottom: 0.1rem solid #eee;
     text-align: left;
 }
 
@@ -53,13 +94,82 @@ table tbody tr:nth-child(even) {
 }
 
 section {
-    margin-bottom: 28px;
+    background-color: #ffffff;
+    padding: 2.4rem 2rem;
+    margin-bottom: 2.8rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.08);
+    text-align: center;
 }
 
-.job .periode {
-    display: inline-block;
-    font-size: 0.9rem;
+.ervaring-lijst {
+    display: flex;
+    gap: 2.4rem;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ervaring-item {
+    flex: 1;
+    max-width: 30rem;
+    padding: 1.6rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.6rem;
+}
+
+.functie {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+.organisatie {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.periode {
+    display: block;
+    font-size: 1rem;
     color: #666;
-    margin-bottom: 6px;
+    margin-bottom: 0.6rem;
 }
 
+.beschrijving {
+    margin-top: 0.4rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#opleidingen ul li,
+#vaardigheden ul li {
+    background-color: #ffffff
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    list-style: none;
+}
+
+
+@media (max-width: 480px) {
+    #opleidingen ul li,
+    #vaardigheden ul li {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .ervaring-lijst {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
