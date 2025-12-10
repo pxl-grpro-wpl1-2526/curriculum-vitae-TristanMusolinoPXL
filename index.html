@@ -7,41 +7,57 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body id="top">
-
+<nav id="hoofdnavigatie">
+    <ul>
+        <li><a href="#top">Intro</a></li>
+        <li><a href="#opleidingen">Opleiding</a></li>
+        <li><a href="#vaardigheden">Vaardigheden</a></li>
+        <li><a href="#talen">Talen</a></li>
+        <li><a href="#ervaring">Ervaring</a></li>
+        <li><a href="#hobby">Hobby's</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 <main>
-    <section id="foto">
-        <figure>
-            <a href="https://www.linkedin.com/in/tristanmusolino/" target="_blank">
-                <img src="images/Profielfoto.png" alt="Professionele foto van Tristan Musolino">
-            </a>
-        </figure>
-    </section>
+    <h1 id="hoofdtitel">Curriculum Vitae</h1>
+
     <section id="introductie">
         <h2>Introductie</h2>
-        <div class="content-block">
-            <p>Ik ben Tristan Musolino, een gemotiveerde en leergierige developer. Mijn achtergrond in chemie en mijn ervaring als winkelmedewerker tonen aan dat ik analytisch, nauwkeurig en klantgericht werk. Ik haal energie uit creatieve projecten. Ik werk gestructureerd, ben communicatief sterk en altijd bereid om bij te leren. Ik zoek een omgeving waarin ik mijn developingskills verder kan ontwikkelen en impact kan maken.</p>
+        <div class="content-wrapper">
+            <figure>
+                <a href="https://www.linkedin.com/in/tristanmusolino/" target="_blank">
+                    <img src="images/Profielfoto.png" alt="Professionele foto van Tristan Musolino">
+                </a>
+            </figure>
+            <div class="content-block">
+                <p>Ik ben Tristan Musolino, een gemotiveerde en leergierige developer. Mijn achtergrond in chemie en mijn ervaring als winkelmedewerker tonen aan dat ik analytisch, nauwkeurig en klantgericht werk. Ik haal energie uit creatieve projecten. Ik werk gestructureerd, ben communicatief sterk en altijd bereid om bij te leren. Ik zoek een omgeving waarin ik mijn developingskills verder kan ontwikkelen en impact kan maken.</p>
+            </div>
         </div>
     </section>
     <section id="opleidingen">
         <h2>Opleidingen</h2>
-        <ul>
-            <li>Diploma Middelbaar Secundair Onderwijs — Chemie</li>
-            <li>Huidige opleiding: Programmeren</li>
-        </ul>
+        <div class="content-block">
+            <ul>
+                <li>Diploma Middelbaar Secundair Onderwijs — Chemie</li>
+                <li>Huidige opleiding: Programmeren</li>
+            </ul>
+        </div>
     </section>
     <section id="vaardigheden">
         <h2>Vaardigheden</h2>
-        <ul>
-            <li>SQL</li>
-            <li>C#</li>
-            <li>HTML & CSS</li>
-            <li>Git & Github</li>
-            <li>Creatief ontwerp, klantgerichtheid, probleemoplossend</li>
-        </ul>
+        <div class="content-block">
+            <ul>
+                <li>SQL</li>
+                <li>C#</li>
+                <li>HTML & CSS</li>
+                <li>Git & Github</li>
+                <li>Creatief ontwerp, klantgerichtheid, probleemoplossend</li>
+            </ul>
+        </div>
     </section>
     <section id="talen">
         <h2>Talenkennis</h2>
-        <div class="content-block">
+        <div class="content-block talen-container">
             <table>
                 <thead>
                 <tr>
@@ -73,30 +89,54 @@
     <section id="ervaring">
         <h2>Werkervaring</h2>
         <div class="ervaring-lijst">
-            <div class="ervaring-item">
+            <a class="content-block ervaring-item" href="https://www.villeroy-boch.com/" target="_blank">
                 <div class="functie">Winkelmedewerker</div>
                 <div class="organisatie">Villeroy & Boch</div>
                 <div class="periode">2021-2025</div>
                 <div class="beschrijving">Klantenadvies, kassa en winkelpresentatie.</div>
-            </div>
-            <div class="ervaring-item">
+            </a>
+            <a class="content-block ervaring-item" href="https://www.terland.be/" target="_blank">
                 <div class="functie">Ober</div>
                 <div class="organisatie">Terland Restaurant & Beach</div>
                 <div class="periode">2025-heden</div>
                 <div class="beschrijving">Opdienen, klantgericht, kassa.</div>
-            </div>
+            </a>
         </div>
     </section>
     <section id="hobby">
         <h2>Hobby's</h2>
-        <div class="content-block">
+        <a class="content-block" href="http://www.boorsemsport.be" target="_blank">
             <article id="voetbal">
                 <h3>Voetbal - Boorsem Sport</h3>
-                <p>Ik speel al 3 jaar bij de club Boorsem Sport. Ik speel als een aanvallende flankspeler voor de U21.</p>
+                <p>Als aanvallende flankspeler voor de U21 bij Boorsem Sport ontwikkel ik mijn teamwerk en snelle besluitvorming. Deze sport, die ik al 3 jaar beoefen, vereist doorzettingsvermogen en de capaciteit om onder druk te presteren en effectief bij te dragen aan een gezamenlijk doel.</p>
             </article>
+        </a>
+        <a class="content-block" href="https://www.basic-fit.com/" target="_blank">
+            <article id="fitness">
+                <h3>Fitness - Basic Fit</h3>
+                <p>Regelmatige fitnessbeoefening bevordert mijn discipline en focus. Ik train consistent om zowel fysieke als mentale veerkracht te behouden.</p>
+            </article>
+        </a>
+    </section>
+    <section id="contact">
+        <h2>Contactgegevens</h2>
+        <a class="content-block contact-item" href="tel:0470303046">
+            <h3>📞 Telefoon</h3>
+            <p>+32 470 30 30 46</p>
+        </a>
+        <a class="content-block contact-item" href="mailto:tristanfmusolino@outlook.com">
+            <h3>✉️ E-mail</h3>
+            <p>tristanfmusolino@outlook.com</p>
+        </a>
+        <a class="content-block contact-item" href="https://www.instagram.com/tristanmusolino" target="_blank">
+            <h3>📸 Instagram</h3>
+            <p>@tristanmusolino</p>
+        </a>
+        <div class="content-block contact-adres">
+            <h3>📍 Woonplaats</h3>
+            <p>Azalealaan 25, 3630 Maasmechelen</p>
         </div>
     </section>
-
 </main>
 <footer>
     <div class="footer-container">
