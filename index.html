@@ -8,19 +8,20 @@
 </head>
 <body id="top">
 <nav id="hoofdnavigatie">
-    <ul>
-        <li><a href="#top">Intro</a></li>
-        <li><a href="#opleidingen">Opleiding</a></li>
-        <li><a href="#vaardigheden">Vaardigheden</a></li>
-        <li><a href="#talen">Talen</a></li>
-        <li><a href="#ervaring">Ervaring</a></li>
-        <li><a href="#hobby">Hobby's</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+        <span class="nav-logo">Curriculum Vitae</span>
+        <ul>
+            <li><a href="#top">Intro</a></li>
+            <li><a href="#opleidingen">Opleiding</a></li>
+            <li><a href="#vaardigheden">Vaardigheden</a></li>
+            <li><a href="#talen">Talen</a></li>
+            <li><a href="#ervaring">Ervaring</a></li>
+            <li><a href="#hobby">Hobby's</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 <main>
-    <h1 id="hoofdtitel">Curriculum Vitae</h1>
-
     <section id="introductie">
         <h2>Introductie</h2>
         <div class="content-wrapper">
@@ -36,55 +37,95 @@
     </section>
     <section id="opleidingen">
         <h2>Opleidingen</h2>
-        <div class="content-block">
-            <ul>
-                <li>Diploma Middelbaar Secundair Onderwijs — Chemie</li>
-                <li>Huidige opleiding: Programmeren</li>
-            </ul>
-        </div>
+        <ul>
+            <li>
+                <span>Diploma Secundair Onderwijs — Chemie</span>
+                <span class="school">Campus De Helix</span>
+            </li>
+            <li>
+                <span>Huidige opleiding: Graduaat in het programmeren</span>
+                <span class="school">Hogeschool PXL</span>
+            </li>
+        </ul>
     </section>
     <section id="vaardigheden">
         <h2>Vaardigheden</h2>
-        <div class="content-block">
-            <ul>
-                <li>SQL</li>
-                <li>C#</li>
-                <li>HTML & CSS</li>
-                <li>Git & Github</li>
-                <li>Creatief ontwerp, klantgerichtheid, probleemoplossend</li>
-            </ul>
+        <div class="vaardigheden-grid">
+            <div class="content-block skill-card">
+                <div class="skill-info">
+                    <span>SQL</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="content-block skill-card">
+                <div class="skill-info">
+                    <span>C#</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="content-block skill-card">
+                <div class="skill-info">
+                    <span>HTML & CSS</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="content-block skill-card">
+                <div class="skill-info">
+                    <span>Git & Github</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="content-block skill-card">
+                <div class="skill-info">
+                    <span>Creatief & Klantgericht</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="talen">
         <h2>Talenkennis</h2>
-        <div class="content-block talen-container">
-            <table>
-                <thead>
-                <tr>
-                    <th>Taal</th>
-                    <th>Lezen</th>
-                    <th>Spreken</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Nederlands</td>
-                    <td>Moedertaal</td>
-                    <td>Moedertaal</td>
-                </tr>
-                <tr>
-                    <td>Engels</td>
-                    <td>Goed</td>
-                    <td>Goed</td>
-                </tr>
-                <tr>
-                    <td>Frans</td>
-                    <td>Basis</td>
-                    <td>Basis</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
+        <table>
+            <thead>
+            <tr>
+                <th>Taal</th>
+                <th>Lezen</th>
+                <th>Spreken</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Nederlands</td>
+                <td>Moedertaal</td>
+                <td>Moedertaal</td>
+            </tr>
+            <tr>
+                <td>Engels</td>
+                <td>Goed</td>
+                <td>Goed</td>
+            </tr>
+            <tr>
+                <td>Frans</td>
+                <td>Basis</td>
+                <td>Basis</td>
+            </tr>
+            </tbody>
+        </table>
     </section>
     <section id="ervaring">
         <h2>Werkervaring</h2>
