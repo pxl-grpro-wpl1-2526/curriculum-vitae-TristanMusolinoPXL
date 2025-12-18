@@ -24,7 +24,7 @@ main {
 }
 
 #hoofdnavigatie {
-    background-color: #222;
+    background-color: cadetblue;
     width: 100%;
     position: fixed;
     top: 0;
@@ -70,7 +70,8 @@ main {
 }
 
 #hoofdnavigatie li a:hover {
-    background-color: #444;
+    background-color: white;
+    color: cadetblue;
 }
 
 h2, h3 {
@@ -88,8 +89,14 @@ h3 {
 
 p, li, td { font-size: 1.1rem; }
 
+#ervaring li {
+    list-style: none;
+    margin: 1rem;
+    padding: 0;
+}
+
 section {
-    background-color: #222;
+    background-color: cadetblue;
     color: #fff;
     padding: 2rem;
     margin-bottom: 2rem;
@@ -117,7 +124,7 @@ section {
     box-shadow: 0 0.5rem 0.5rem #ffffff;
 }
 
-.content-block, .ervaring-item, #opleidingen li {
+.content-block, .ervaring-lijst, #opleidingen li {
     background-color: #fff;
     color: #222;
     border-radius: 1rem;
@@ -171,14 +178,14 @@ section {
 }
 
 .skill-progress {
-    background-color: #444;
+    background-color: cadetblue;
     height: 100%;
     border-radius: 6px;
     transition: width 1s ease-in-out;
 }
 
 .skill-card:hover .skill-progress {
-    background-color: #000;
+    background-color: cadetblue;
 }
 
 table {
@@ -262,11 +269,11 @@ table td:first-child {
 }
 
 footer {
-    background-color: #222;
+    background-color: cadetblue;
     color: #fff;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     border-radius: 1rem 1rem 0 0;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .footer-container {
@@ -282,7 +289,7 @@ footer {
 .back-to-top {
     padding: 0.6rem 1.2rem;
     background-color: #fff;
-    color: #222;
+    color: cadetblue;
     border-radius: 0.6rem;
     text-decoration: none;
     font-weight: 600;
@@ -292,7 +299,6 @@ footer {
 
 .back-to-top:hover {
     background-color: #ddd;
-    transform: translateY(-2px);
 }
 
 @media (max-width: 850px) {
