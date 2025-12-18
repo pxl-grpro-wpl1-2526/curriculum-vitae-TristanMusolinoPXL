@@ -202,7 +202,7 @@ table {
 table th {
     padding: 1.5rem 0.5rem;
     text-align: left;
-    background-color: #fff;
+    background-color: #f0f0f0;
     color: #888;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -218,6 +218,10 @@ table td {
     word-wrap: break-word;
 }
 
+table tr:nth-child(even) {
+    background-color: #f0f0f0 ;
+}
+
 table tr:last-child td {
     border-bottom: none;
 }
@@ -225,6 +229,10 @@ table tr:last-child td {
 table td:first-child {
     font-weight: 700;
     color: #000;
+}
+
+table tr:hover {
+    background-color: cadetblue;
 }
 
 #ervaring .ervaring-lijst {
@@ -265,7 +273,7 @@ table td:first-child {
 
 #opleidingen .school {
     font-weight: 700;
-    color: #444;
+    color: cadetblue;
 }
 
 footer {
